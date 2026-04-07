@@ -25,13 +25,13 @@ It prevents duplicate processing (e.g., double orders, repeated payments, or acc
 Install via Composer:
 
 ```bash
-composer require devtools/laravel-idempotent
+composer require nishit/laravel-idempotent
 ```
 
 Publish the configuration file:
 
 ```bash
-php artisan vendor:publish --provider="DevTools\LaravelIdempotent\LaravelIdempotentServiceProvider" --tag=config
+php artisan vendor:publish --provider="Nishit\LaravelIdempotent\LaravelIdempotentServiceProvider" --tag=config
 ```
 
 ---
@@ -65,7 +65,7 @@ return [
 Apply middleware to selected routes:
 
 ```php
-use DevTools\LaravelIdempotent\Middleware\Idempotent;
+use Nishit\LaravelIdempotent\Middleware\Idempotent;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaymentController;
 

@@ -1,5 +1,5 @@
 <?php
-namespace DevTools\LaravelIdempotent\Services;
+namespace Nishit\LaravelIdempotent\Services;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;

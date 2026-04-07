@@ -1,5 +1,5 @@
 {
-    "name": "devtools/laravel-idempotent",
+    "name": "nishit/laravel-idempotent",
     "description": "Laravel middleware to make POST, PUT, PATCH requests idempotent.",
     "type": "library",
     "license": "MIT",
@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "DevTools\\LaravelIdempotent\\": "src/"
+            "Nishit\\LaravelIdempotent\\": "src/"
         }
     },
     "require": {
@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DevTools\\LaravelIdempotent\\LaravelIdempotentServiceProvider"
+                "Nishit\\LaravelIdempotent\\LaravelIdempotentServiceProvider"
             ]
         }
     },

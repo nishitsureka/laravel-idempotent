@@ -1,9 +1,9 @@
 <?php
-namespace DevTools\LaravelIdempotent;
+namespace Nishit\LaravelIdempotent;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
-use DevTools\LaravelIdempotent\Middleware\Idempotent;
+use Nishit\LaravelIdempotent\Middleware\Idempotent;
 
 class LaravelIdempotentServiceProvider extends ServiceProvider
 {

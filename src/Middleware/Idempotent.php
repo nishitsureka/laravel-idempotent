@@ -1,9 +1,9 @@
 <?php
-namespace DevTools\LaravelIdempotent\Middleware;
+namespace Nishit\LaravelIdempotent\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use DevTools\LaravelIdempotent\Services\IdempotentService;
+use Nishit\LaravelIdempotent\Services\IdempotentService;
 
 class Idempotent
 {
