@@ -1,0 +1,33 @@
+{
+    "name": "devtools/laravel-idempotent",
+    "description": "Laravel middleware to make POST, PUT, PATCH requests idempotent.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nishit Sureka",
+            "email": "nishitsureka@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DevTools\\LaravelIdempotent\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0",
+        "illuminate/http": "^11.0",
+        "illuminate/routing": "^11.0",
+        "illuminate/cache": "^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DevTools\\LaravelIdempotent\\LaravelIdempotentServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
