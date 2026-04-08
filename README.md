@@ -65,9 +65,9 @@ return [
 Apply middleware to selected routes:
 
 ```php
-use Nishit\LaravelIdempotent\Middleware\Idempotent;
 use App\Http\Controllers\OrderController;
-use App\Http\Controllers\PaymentController;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 // Single route
 Route::post('/submit', function (\Illuminate\Http\Request $request) {
@@ -75,12 +75,10 @@ Route::post('/submit', function (\Illuminate\Http\Request $request) {
 })->middleware('idempotent');
 
 Route::post('/order', [OrderController::class, 'create'])->middleware('idempotent');
-Route::post('/payment', [PaymentController::class, 'charge'])->middleware('idempotent');
 
 // Or group routes
 Route::middleware(['idempotent'])->group(function () {
     Route::post('/order', [OrderController::class, 'create']);
-    Route::post('/payment', [PaymentController::class, 'charge']);
 });
 ```
 
